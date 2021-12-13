@@ -10,6 +10,8 @@ body{
     font-size: 16px;
     color: black;
 }
+
+
 /*Layout: mobile first*/
 /*grid-template-areas header, hero, main and footer*/
 #wrapper{
@@ -29,12 +31,14 @@ body{
 /*set areas name*/
 header{
     grid-area: header;
+    display: flex;
   
 }
 #hero{
     grid-area: hero;
-    background-color: burlywood;
+    grid-template-columns: 1fr 1fr;
 }
+
 main{
     grid-area: main;
     background-color: #FAF9F8;
@@ -44,6 +48,7 @@ footer{
     background-color: #6A9DC9;
 }
 
+/*Navigation*/
 /*nav har 3 columns logo, menus and hamburgar menu which dispalys only in mobile screens*/
 nav{
  
@@ -105,6 +110,19 @@ li{
     margin: 10px;
    
     }
+    #hero{
+        grid-area: hero;
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    .hero-image{
+        grid-column: 1;
+    }
+    .hero-text{
+        grid-column: 2;
+        background-color: rgb(35, 16, 80);
+    }
+    
 }
 
  /*Large screens*/
