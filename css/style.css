@@ -10,7 +10,8 @@ body{
     font-size: 16px;
     color: black;
 }
-
+/*Layout: mobile first*/
+/*grid-template-areas header, hero, main and footer*/
 #wrapper{
 
     display: grid;
@@ -24,9 +25,10 @@ body{
     height: 100vh;
     
 }
+
+/*set areas name*/
 header{
     grid-area: header;
-
   
 }
 #hero{
@@ -41,6 +43,8 @@ footer{
     grid-area: footer;
     background-color: #6A9DC9;
 }
+
+/*nav har 3 columns logo, menus and hamburgar menu which dispalys only in mobile screens*/
 nav{
  
     display: grid;
@@ -52,11 +56,12 @@ nav{
     grid-column: 1;
     
 }
-
+ /* menu is invisible in mobile screens*/
 .menu{
 
     display: none;
 }
+
 .nav-toggle{
     grid-column: 3;
     align-self: center;
@@ -65,27 +70,31 @@ nav{
 li{
     list-style: none;
 }
-  .item a {
+.item a {
     color:#4C5B65;
     text-decoration: none;
     padding: 30px;
     font-weight: 600;
-  }
-  .item a:hover{
+}
+.item a:hover{
       background-color:#4C5B65;
       color: white;
       
-  }
+}
  
-
-  
-  .logo img{
+.logo img{
       width:200px
-  }
-  @media screen and (min-width: 700px) {
+}
+
+/*tablet screen*/
+@media screen and (min-width: 700px) {
+    
+    /*hamburgare menu is invisible in tablets and large screens*/
     .nav-toggle{
      display: none;
   }
+
+  /*Display: flex menu items  */
   .menu{
 
     grid-column: 2;
@@ -94,12 +103,12 @@ li{
     justify-content: flex-end;
     align-items: center;
     margin: 10px;
-    
-  
-        }
+   
     }
- 
-    @media screen and (min-width: 960px) {
+}
+
+ /*Large screens*/
+@media screen and (min-width: 960px) {
  
 }
   
