@@ -10,6 +10,9 @@ body{
     font-size: 16px;
     color: black;
 }
+h1{
+    color: white;
+}
 
 #wrapper{
 
@@ -31,7 +34,7 @@ header{
 }
 #hero{
     grid-area: hero;
-    background-color: burlywood;
+
 }
 main{
     grid-area: main;
@@ -51,6 +54,9 @@ nav{
 
     grid-column: 1;
     
+}
+button{
+    background-color: 6A9DC9;
 }
 
 .menu{
@@ -82,6 +88,14 @@ li{
   .logo img{
       width:200px
   }
+  .hero-image img{
+      max-width: 100%;
+      min-height: 100%;
+  }
+  .hero-text{
+    background: linear-gradient(136deg, #231050 50%, #4f1b5f 100%);
+    
+  }
   @media screen and (min-width: 700px) {
     .nav-toggle{
      display: none;
@@ -98,7 +112,11 @@ li{
   
         }
     }
- 
+ #hero{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     
+ }
     @media screen and (min-width: 960px) {
  
 }
