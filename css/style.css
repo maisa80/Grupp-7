@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* Basic styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+#wrapper{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 1fr 1fr 50px;
+    grid-template-areas:
+    "header header header header"
+    "hero hero hero hero"
+    "main main main main"
+    "footer footer footer footer ";
+    height: 100vh;
+    
+}
+header{
+    grid-area: header;
+
+  
+}
+#hero{
+    grid-area: hero;
+    background-color: burlywood;
+}
+main{
+    grid-area: main;
+    background-color: #FAF9F8;
+}
+footer{
+    grid-area: footer;
+    background-color: #6A9DC9;
+}
+nav{
+ 
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+}
+.logo{
+
+    grid-column: 1;
+    
+}
+
+.menu{
+
+    display: none;
+}
+.nav-toggle{
+    grid-column: 3;
+    align-self: center;
+    margin: 20px;
+}
+li{
+    list-style: none;
+}
+  .item a {
+    color:#4C5B65;
+    text-decoration: none;
+    padding: 30px;
+    font-weight: 600;
+  }
+  .item a:hover{
+      background-color:#4C5B65;
+      color: white;
+      
+  }
+ 
+
+  
+  .logo img{
+      width:200px
+  }
+  @media screen and (min-width: 700px) {
+    .nav-toggle{
+     display: none;
+  }
+  .menu{
+
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+    
+  
+        }
+    }
+ 
+    @media screen and (min-width: 960px) {
+ 
+}
+  
+
+  
+  
+  
+
