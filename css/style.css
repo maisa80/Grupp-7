@@ -102,7 +102,7 @@ li {
 /*Hero style*/
 #hero {
     grid-area: hero;
-    display: block;
+
 
 
 }
@@ -111,11 +111,7 @@ li {
     min-height: 100%;
 
 }
-.hero-text {
 
-    background: linear-gradient(136deg, #231050 50%, #4f1b5f 100%);
-
-}
 
 /*Hamburgar menu is invisibile in tablets and large screens*/
 @media screen and (min-width: 700px) {
