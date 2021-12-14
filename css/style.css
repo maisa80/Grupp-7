@@ -16,16 +16,20 @@ body {
 h2 {
     margin: 20px 0px;
 }
-h3{
+
+h3 {
     margin: 0px 10px;
 }
-p{
+
+p {
     margin: 10px auto;
     line-height: 1.7;
 }
-.centered{
+
+.centered {
     text-align: center;
 }
+
 #wrapper {
 
     display: grid;
@@ -97,17 +101,18 @@ li {
 .item a {
     color: #4C5B65;
     text-decoration: none;
-    padding: 30px;
-    font-weight: 600;
+    padding: 10px 30px;
+
 }
 
 .item a:hover {
-    background-color: #4C5B65;
-    color: white;
+    border-bottom: 3px solid #679BC7;
 
 }
 
-
+.item a.active {
+    border-bottom: 3px solid #679BC7;
+  }
 
 .logo img {
     width: 200px
@@ -117,14 +122,15 @@ li {
 .content {
     display: block;
     margin: 10px;
-    padding:40px;
-}
-[class*=section]{
-margin-bottom: 40px;
-    
+    padding: 40px;
 }
 
-.title{
+[class*=section] {
+    margin-bottom: 40px;
+
+}
+
+.title {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -139,7 +145,6 @@ margin-bottom: 40px;
 
         grid-column: 2;
         display: flex;
-        justify-content: space-between;
         justify-content: flex-end;
         align-items: center;
         margin: 5px;
@@ -152,7 +157,7 @@ margin-bottom: 40px;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
 
-        
+
     }
 
 
@@ -166,7 +171,7 @@ margin-bottom: 40px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
-       
-        
+
+
     }
 }
