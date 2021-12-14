@@ -64,6 +64,7 @@ main {
 footer {
     grid-area: footer;
     background-color: #6A9DC9;
+    padding:20px;
 }
 
 nav {
