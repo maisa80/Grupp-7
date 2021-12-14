@@ -1,155 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 /* Basic styling */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-body {
+  }
+body{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: black;
 }
-
-h1 {
+h1{
     color: white;
 }
 
-/*Mobile first*/
-#wrapper {
+#wrapper{
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: 100px 1fr 1fr 50px;
     grid-template-areas:
-        "header header header header"
-        "hero hero hero hero"
-        "main main main main"
-        "footer footer footer footer ";
+    "header header header header"
+    "hero hero hero hero"
+    "main main main main"
+    "footer footer footer footer ";
     height: 100vh;
-
+    
 }
-
-header {
+header{
     grid-area: header;
 
+  
+}
+#hero{
+    grid-area: hero;
 
 }
-
-main {
+main{
     grid-area: main;
     background-color: #FAF9F8;
 }
-
-footer {
+footer{
     grid-area: footer;
     background-color: #6A9DC9;
 }
-
-/*navigiation*/
-nav {
-
+nav{
+ 
     display: grid;
     grid-template-columns: auto 1fr auto;
 
 }
-
-.logo {
+.logo{
 
     grid-column: 1;
-
+    
+}
+button{
+    background-color: 6A9DC9;
 }
 
-button {
-    background-color: #6A9DC9;
-}
-
-.menu {
+.menu{
 
     display: none;
 }
-
-.nav-toggle {
+.nav-toggle{
     grid-column: 3;
     align-self: center;
     margin: 20px;
 }
-
-li {
+li{
     list-style: none;
 }
-
-.item a {
-    color: #4C5B65;
+  .item a {
+    color:#4C5B65;
     text-decoration: none;
     padding: 30px;
     font-weight: 600;
-}
+  }
+  .item a:hover{
+      background-color:#4C5B65;
+      color: white;
+      
+  }
+ 
 
-.item a:hover {
-    background-color: #4C5B65;
-    color: white;
+  
+  .logo img{
+      width:200px
+  }
+  #hero img{
+      width: 100%;
+      min-height: 100%;
+  }
+  
+  @media screen and (min-width: 700px) {
+    .nav-toggle{
+     display: none;
+  }
+  .menu{
 
-}
-
-
-.logo img {
-    width: 200px
-}
-
-/*Hero style*/
-#hero {
-    grid-area: hero;
-
-
-
-}
-.hero-image img {
-    max-width: 100%;
-    min-height: 100%;
-
-}
-
-
-/*Hamburgar menu is invisibile in tablets and large screens*/
-@media screen and (min-width: 700px) {
-    .nav-toggle {
-        display: none;
-    }
-
-    .menu {
-
-        grid-column: 2;
-        display: flex;
-        justify-content: space-between;
-        justify-content: flex-end;
-        align-items: center;
-        margin: 10px;
-
-
-    }
-
-    #hero {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-    .hero-image {
-        grid-column: 1;
-
-
-    }
-
-    .hero-text {
-        grid-column: 2;
-        background: linear-gradient(136deg, #231050 50%, #4f1b5f 100%);
-
-    }
-
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
     
+  
+    }
 }
+ 
+     
+ 
+    @media screen and (min-width: 960px) {
+ 
+}
+  
 
-@media screen and (min-width: 960px) {}
+  
+  
+  
