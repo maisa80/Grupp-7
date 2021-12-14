@@ -64,12 +64,14 @@ main {
 footer {
     grid-area: footer;
     background-color: #6A9DC9;
+    padding:20px;
 }
 
 nav {
 
     display: grid;
     grid-template-columns: auto 1fr auto;
+    align-items: center;
 
 }
 
@@ -114,10 +116,19 @@ li {
     border-bottom: 3px solid #679BC7;
   }
 
-.logo img {
+/* .logo img {
     width: 200px
+} */
+.logo {
+    background-image: url("../images/DS-Logo-small.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+   
+    
 }
-
 
 .content {
     display: block;
@@ -140,7 +151,15 @@ li {
     .nav-toggle {
         display: none;
     }
-
+    .logo {
+        background-image: url(../images/DS-Logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 100px;
+        margin: 0;
+        
+    }
     .menu {
 
         grid-column: 2;
