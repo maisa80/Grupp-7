@@ -41,7 +41,8 @@ p {
         "footer footer footer footer ";
 
 }
-#wrapper-contact{
+
+#wrapper-contact {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px 1fr 50px;
@@ -50,6 +51,7 @@ p {
         "main main main main"
         "footer footer footer footer ";
 }
+
 header {
     grid-area: header;
 
@@ -165,10 +167,10 @@ li {
 }
 
 #hero img {
-     width: auto ;
-  max-width: 100% ;
-  height: auto ;
-   
+    width: auto;
+    max-width: 100%;
+    height: auto;
+
 
 
 }
@@ -203,9 +205,11 @@ li {
     justify-content: space-between;
     margin: 20px;
 }
-.contact-socialmedia{
+
+.contact-socialmedia {
     margin: 40px 0px;
 }
+
 .about-content {
     display: flex;
     align-items: center;
@@ -214,6 +218,7 @@ li {
     flex-wrap: wrap;
 
 }
+
 @media screen and (min-width: 700px) {
     .nav-toggle {
         display: none;
@@ -227,9 +232,10 @@ li {
         justify-content: flex-end;
         align-items: center;
         margin: 5px;
-    
-    
+
+
     }
+
     .logo {
         background-image: url(../images/DS-Logo.png);
         background-repeat: no-repeat;
@@ -241,9 +247,9 @@ li {
     }
 
     .about-content {
-        
+
         flex-wrap: nowrap;
-    
+
     }
 }
 
