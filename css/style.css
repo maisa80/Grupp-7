@@ -180,17 +180,6 @@ li {
 }
 
 
-
-
-.content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-
-
-}
-
-
 .contact-main {
     display: flex;
     flex-wrap: wrap;
@@ -224,7 +213,14 @@ li {
         display: none;
     }
 
-
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    
+    
+    }
+    
     .menu {
 
         grid-column: 2;
