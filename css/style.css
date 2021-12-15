@@ -157,10 +157,10 @@ li {
     justify-content: flex-start;
 }
 
-
-.about-text, .about-image, .contact-image, .contact-text {
+.contat-text{
     padding: 20px;
 }
+
 
 .about-image img, .contact-image img {
     width: 300px;
@@ -212,7 +212,9 @@ li {
     .nav-toggle {
         display: none;
     }
-
+    .contact-image,.about-image{
+        padding: 20px;
+    }
     .content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
