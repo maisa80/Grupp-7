@@ -34,7 +34,6 @@ p {
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 350px 1fr 50px;
     grid-template-areas:
         "header header header header"
         "hero hero hero hero"
@@ -166,7 +165,10 @@ li {
 }
 
 #hero img {
-    width: 100%;
+     width: auto ;
+  max-width: 100% ;
+  height: auto ;
+   
 
 
 }
@@ -185,13 +187,7 @@ li {
 
 
 }
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
 
-}
 
 .contact-main {
     display: flex;
@@ -210,19 +206,20 @@ li {
 .contact-socialmedia{
     margin: 40px 0px;
 }
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    flex-wrap: wrap;
 
-
+}
 @media screen and (min-width: 700px) {
     .nav-toggle {
         display: none;
     }
 
-    #hero img {
-        width: 100%;
-        max-height: 100%;
 
-
-    }
     .menu {
 
         grid-column: 2;
@@ -243,7 +240,11 @@ li {
 
     }
 
-
+    .about-content {
+        
+        flex-wrap: nowrap;
+    
+    }
 }
 
 
