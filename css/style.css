@@ -51,20 +51,20 @@ header {
 
 #hero {
     grid-area: hero;
-    background-color: aquamarine;
+    
 
 }
 
 main {
     grid-area: main;
-    background-color: #FAF9F8;
+
 
 }
 
 footer {
     grid-area: footer;
     background-color: #6A9DC9;
-    padding:20px;
+    padding: 20px;
 }
 
 nav {
@@ -114,7 +114,7 @@ li {
 
 .item a.active {
     border-bottom: 3px solid #679BC7;
-  }
+}
 
 /* .logo img {
     width: 200px
@@ -126,14 +126,15 @@ li {
     width: 50px;
     height: 50px;
     margin: 20px;
-   
-    
+
+
 }
 
 .content {
     display: block;
     margin: 10px;
     padding: 40px;
+    background-color: #FAF9F8;
 }
 
 [class*=section] {
@@ -147,9 +148,34 @@ li {
     justify-content: flex-start;
 }
 
+.about-content {
+    display: block;
+    align-items: center;
+}
+.about-text{
+    padding: 20px;
+}
+.about-image{
+    padding: 40px;
+}
+.about-image img {
+    width: 300px;
+}
+#hero img {
+    width: 100%;
+    max-height: 300px;
+    
+   
+}
 @media screen and (min-width: 700px) {
     .nav-toggle {
         display: none;
+    }
+    #hero img {
+        width: 100%;
+        max-height: 100%;
+        
+       
     }
     .logo {
         background-image: url(../images/DS-Logo.png);
@@ -158,8 +184,9 @@ li {
         width: 200px;
         height: 100px;
         margin: 0;
-        
+
     }
+
     .menu {
 
         grid-column: 2;
@@ -171,6 +198,8 @@ li {
 
     }
 
+    
+
     .content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -179,7 +208,15 @@ li {
 
     }
 
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+       
+    }
 
+  
 }
 
 
