@@ -157,13 +157,17 @@ li {
     justify-content: flex-start;
 }
 
-.contact-text{
+.contact-text {
+    margin: 10px;
     padding: 20px;
+
 }
 
 
 .about-image img, .contact-image img {
-    width: 300px;
+    width: 250px;
+    min-width: 100%;
+
 }
 
 #hero img {
@@ -212,17 +216,19 @@ li {
     .nav-toggle {
         display: none;
     }
-    .contact-image,.about-image{
+
+    .contact-image, .about-image {
         padding: 20px;
     }
+
     .content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
-    
-    
+
+
     }
-    
+
     .menu {
 
         grid-column: 2;
