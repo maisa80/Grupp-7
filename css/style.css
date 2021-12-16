@@ -45,7 +45,7 @@ p {
 #wrapper-contact {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-   
+
     grid-template-areas:
         "header header header header"
         "main main main main"
@@ -171,11 +171,9 @@ li {
 }
 
 #hero img {
-    width: auto;
+    width: 100%;
     max-width: 100%;
     height: auto;
-
-
 
 }
 
@@ -197,9 +195,10 @@ li {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px;
-    
+
 }
-.social-icons i{
+
+.social-icons i {
     color: black;
 }
 
@@ -215,34 +214,39 @@ li {
     flex-wrap: wrap;
 
 }
-.links ul{
+
+.links ul {
     display: flex;
     flex-wrap: wrap;
 }
-  footer li, .profiles a{
-      padding: 20px;
-      padding-left: 0px;
-     
-      
-  }
-  footer a {
+
+footer li, .profiles a {
+    padding: 20px;
+    padding-left: 0px;
+
+
+}
+
+footer a {
     color: white;
     text-decoration: none;
-  }
-  
-  footer a:hover {
+}
+
+footer a:hover {
     color: #070707;
     border-bottom: 2px solid #070707;
-  }
-  .content img{
-      width:100px;
-  }
-  .profiles{
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-  }
-  
+}
+
+.content img {
+    width: 100px;
+}
+
+.profiles {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
 @media screen and (min-width: 700px) {
     .nav-toggle {
         display: none;
