@@ -45,7 +45,7 @@ p {
 #wrapper-contact {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 1fr 50px;
+   
     grid-template-areas:
         "header header header header"
         "main main main main"
@@ -72,11 +72,11 @@ main {
 
 footer {
     grid-area: footer;
-    background-color: #6A9DC9;
-    padding: 20px;
+    background-color: rgb(113, 191, 243);
+    padding: 20px 10px;
 }
 
-nav {
+header nav {
 
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -197,6 +197,10 @@ li {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px;
+    
+}
+.social-icons i{
+    color: black;
 }
 
 .contact-socialmedia {
@@ -211,7 +215,34 @@ li {
     flex-wrap: wrap;
 
 }
-
+.links ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+  footer li, .profiles a{
+      padding: 20px;
+      padding-left: 0px;
+     
+      
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #070707;
+    border-bottom: 2px solid #070707;
+  }
+  .content img{
+      width:100px;
+  }
+  .profiles{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+  }
+  
 @media screen and (min-width: 700px) {
     .nav-toggle {
         display: none;
