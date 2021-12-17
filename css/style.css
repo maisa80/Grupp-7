@@ -241,7 +241,7 @@ footer a:hover {
     flex-wrap: wrap;
 }
 
-/*Meny kan inte visas på mobile skärm. lyckades inte göra den fungerande*/
+/*Meny fugerar inte som den ska på mobile skärm. lyckades inte göra den fungerande därför set display som none*/
 .menu {
     position: absolute;
     top: 0;
